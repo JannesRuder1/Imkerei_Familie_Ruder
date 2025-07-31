@@ -2,7 +2,7 @@ html, body {
     margin: 0;
     padding: 0;
     height: auto;
-    font-family: Arial, cursive, sans-serif;
+    font-family: "Comic Sans MS", cursive, sans-serif;
     background-color: #f1ed97;
     scroll-behavior: smooth;
     position: relative;
@@ -70,7 +70,7 @@ html, body {
 .section3 .text-container,
 .section5 .text-container,
 .section7 .text-container {
-    order: 1;
+    order: 2;
     padding: 0 2rem;
     max-width: 40%;
 }
@@ -79,23 +79,25 @@ html, body {
 .section3 .image-container,
 .section5 .image-container,
 .section7 .image-container {
-    order: 2;
+    order: 1;
     max-width: 40%;
 }
 
 .section2 .image-container,
 .section4 .image-container,
 .section6 .image-container,
-.section8 .image-container {
-    order: 1;
+.section8 .image-container,
+.section0 .image-container {
+    order: 2;
     max-width: 40%;
 }
 
 .section2 .text-container,
 .section4 .text-container,
 .section6 .text-container,
-.section8 .text-container {
-    order: 2;
+.section8 .text-container,
+.section0 .text-container {
+    order: 1;
     padding: 0 2rem;
     max-width: 40%;
 }
@@ -124,7 +126,7 @@ html, body {
     color: #fcfbea;
     padding: 3rem 2rem;
     font-size: 1rem;
-    font-family: 'Congenial', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
 }
 
