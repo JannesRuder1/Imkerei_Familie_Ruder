@@ -34,6 +34,7 @@ html, body {
         padding: 2rem 1rem;
     }
 
+    .section0 .text-container,
     .section1 .text-container,
     .section3 .text-container,
     .section2 .text-container,
@@ -47,6 +48,7 @@ html, body {
         order: 0 !important;
     }
 
+    .section0 .image-container,
     .section1 .image-container,
     .section3 .image-container,
     .section2 .image-container,
@@ -62,7 +64,11 @@ html, body {
     }
 
     .image-container img {
-        height: 200px !important;
+        height: 350px !important;
+    }
+
+    .additional-image-container img {
+        height: 350px !important;
     }
 }
 
@@ -114,6 +120,16 @@ html, body {
 .image-container img {
     width: 100%;
     height: 550px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    position: relative;
+    will-change: transform;
+}
+
+.additional-image-container img {
+    width: 100%;
+    height: 350px;
     object-fit: cover;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
