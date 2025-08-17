@@ -56,7 +56,9 @@ html, body {
     .section5 .image-container,
     .section6 .image-container,
     .section7 .image-container,
-    .section8 .image-container {
+    .section8 .image-container,
+    .section9 .image-container,
+    .scetion9 .imagetoo-container {
         max-width: 100% !important;
         max-height: none !important;
         order: 0 !important;
@@ -64,6 +66,11 @@ html, body {
     }
 
     .image-container img {
+        height: 350px !important;
+    }
+
+    
+    .imagetoo-container img {
         height: 350px !important;
     }
 
@@ -84,7 +91,8 @@ html, body {
 .section1 .image-container,
 .section3 .image-container,
 .section5 .image-container,
-.section7 .image-container {
+.section7 .image-container,
+.section9 .image-container {
     order: 1;
     max-width: 40%;
 }
@@ -93,7 +101,8 @@ html, body {
 .section4 .image-container,
 .section6 .image-container,
 .section8 .image-container,
-.section0 .image-container {
+.section0 .image-container,
+.scetion9 .imagetoo-container {
     order: 2;
     max-width: 40%;
 }
@@ -118,6 +127,16 @@ html, body {
 }
 
 .image-container img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    position: relative;
+    will-change: transform;
+}
+
+.imagetoo-container img {
     width: 100%;
     height: 550px;
     object-fit: cover;
