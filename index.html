@@ -205,8 +205,8 @@
         <p>
             Bei einer Schulung des Kreisimkervereins Stade von 1887 e.V. – im Deutschen Imkerbund e.V. registriert – lernten wir alles über Bienen, ihre Pflege, die Honiggewinnung und die Bedeutung einer verantwortungsvollen Imkerei. Heute dürfen wir unseren Honig stolz unter dem Siegel ‚Echter Deutscher Honig‘ verkaufen.
         </p>
-        <p>
-            Inzwischen ist Simon 13 und mit ganzem Herzen Jungimker. Gemeinsam kümmern wir uns um unsere Bienenvölker. 
+        <p id="simon-alter">
+            Inzwischen ist Simon 14 und mit ganzem Herzen Jungimker. Gemeinsam kümmern wir uns um unsere Bienenvölker. 
         </p>
         <p>
             Unsere kleine Imkerei ist für uns mehr als nur ein Hobby – sie ist ein Familienprojekt!
@@ -243,6 +243,20 @@
         <p><a href="https://github.com/JannesRuder1" target="_blank" rel="noopener noreferrer">2025 Jannes Ruder</a></p>
       </div>
     </footer>
+
+
+    
     <script src="script.js"></script>
+    <script>
+  const geburtstag = new Date(2009, 8, 9); 
+  const heute = new Date();
+  let alter = heute.getFullYear() - geburtstag.getFullYear();
+  const m = heute.getMonth() - geburtstag.getMonth();
+  if (m < 0 || (m === 0 && heute.getDate() < geburtstag.getDate())) {
+    alter--;
+  }
+  document.getElementById("simon-alter").innerHTML =
+    `Inzwischen ist Simon ${alter} und mit ganzem Herzen Jungimker. Gemeinsam kümmern wir uns um unsere Bienenvölker.`;
+</script>
   </body>
 </html>
