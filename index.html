@@ -58,7 +58,8 @@
         </p>
         <ul>
           <li>Deutscher Qualitäts-Honig</li>
-          <li>Geerntet im Jahr 2025</li>
+          <p id="simon-alter"></p>
+          <li>Geerntet im Jahr 2026</li>
           <li>
             Entspricht den Qualitätsrichtlinien des Deutschen Imkerbundes
             (D.I.B.)
@@ -272,8 +273,14 @@
   if (m < 0 || (m === 0 && heute.getDate() < geburtstag.getDate())) {
     alter--;
   }
+  let erntejahr = heute.getFullYear();
+  if (heute.getMonth() < 2) { // Januar (0) und Februar (1)
+    erntejahr--;
+  }
   document.getElementById("simon-alter").innerHTML =
     `Inzwischen ist Simon ${alter} und mit ganzem Herzen Jungimker. Gemeinsam kümmern wir uns um unsere Bienenvölker.`;
+  document.getElementById("erntejahr").innerHTML =
+    `Geerntet im Jahr ${erntejahr}`;
 </script>
   </body>
 </html>
