@@ -93,6 +93,9 @@
         <p>
             Beide Sorten spiegeln auf einzigartige Weise die Vielfalt der Natur in ihrer jeweiligen Jahreszeit wider.
         </p>
+        <p>
+          Aus praktischen Gründen vermarkten wir unseren Honig jedoch einheitlich als Blütenhonig.
+        </p>
       </div>
     </section>
 
@@ -265,16 +268,10 @@
   const geburtstag = new Date(2011, 8, 9); 
   const heute = new Date();
   let alter = heute.getFullYear() - geburtstag.getFullYear();
-  const m = heute.getMonth() - geburtstag.getMonth();
-  if (m < 0 || (m === 0 && heute.getDate() < geburtstag.getDate())) {
-    alter--;
-  }
   let erntejahr = heute.getFullYear();
   if (heute.getMonth() < 2) { // Januar (0) und Februar (1)
     erntejahr--;
   }
-  document.getElementById("simon-alter").innerHTML =
-    `Inzwischen ist Simon ${alter} und mit ganzem Herzen Jungimker. Gemeinsam kümmern wir uns um unsere Bienenvölker.`;
   document.getElementById("erntejahr").innerHTML =
     `Geerntet im Jahr ${erntejahr}`;
 </script>
