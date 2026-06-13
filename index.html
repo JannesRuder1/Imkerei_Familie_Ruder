@@ -265,14 +265,14 @@
     
     <script src="script.js"></script>
     <script>
-  const heute = new Date();
-  let alter = heute.getFullYear() - geburtstag.getFullYear();
-  let erntejahr = heute.getFullYear();
-  if (heute.getMonth() < 2) { // Januar (0) und Februar (1)
-    erntejahr--;
-  }
-  document.getElementById("erntejahr").innerHTML =
-    `Geerntet im Jahr ${erntejahr}`;
-</script>
+    const heute = new Date();
+    let alter = heute.getFullYear() - geburtstag.getFullYear();
+    let erntejahr = heute.getFullYear();
+    if (heute.getMonth() < 2) { // Januar (0) und Februar (1)
+      erntejahr--;
+    }
+    document.getElementById("erntejahr").innerHTML =
+      `Geerntet im Jahr ${erntejahr}`;
+    </script>
   </body>
 </html>
